@@ -3,6 +3,7 @@ clear
 
 ### 基础部分 ###
 # 使用 O2 级别的优化
+sed -i 's/10.0.0.2/192.168.31.4/g' package/base-files/files/bin/config_generate
 sed -i 's/Os/O2/g' include/target.mk
 # 更新 Feeds
 ./scripts/feeds update -a
